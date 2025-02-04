@@ -1,0 +1,65 @@
+baseurl      = "https://prashantbhaga.github.io/SynapticGarden/"
+title        = "Synaptic Garden"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "A digital garden of thoughts and ideas"
+
+  # Set disableReadOtherPosts to false to show the links to other posts
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons if you want
+  enableSharingButtons = true
+
+  # Show a global language switcher in the navigation bar
+  enableGlobalLanguageMenu = false
+
+  # Metadata mostly used in document's head
+  description = "Synaptic Garden - A space for growing and sharing ideas"
+  keywords = "blog, thoughts, ideas, digital garden"
+  images = [""]
+
+  # Set this to false to disable dark mode by default
+  defaultTheme = "dark"
+
+  # You can also enable custom CSS and JS
+  customCSS = []
+  customJS  = []
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Synaptic Garden"
+    subtitle = "A digital garden of thoughts and ideas"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "synaptic garden"
+      logoHomeLink = "/"
+
+  # Navigation
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/posts"
+    weight     = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+    weight     = 2
